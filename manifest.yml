@@ -1,0 +1,10 @@
+
+---
+applications:
+- name: vehicle_detection
+  memory: 2048MB
+  disk_quota: 2GB
+  random-route: true
+  parameters:
+    memory: 2048MB
+    buildpack: 'python_buildpack'

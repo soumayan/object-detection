@@ -1,6 +1,3 @@
-# Author: Sourangshu Pal
-# Date: 15/11/19
-# Import packages
 import os
 import sys
 #from object_detection.utils import label_map_util
@@ -33,7 +30,7 @@ class MultiClassObj:
         self.PATH_TO_IMAGE = os.path.join(CWD_PATH, 'research', self.IMAGE_NAME)
         print(self.PATH_TO_IMAGE)
         # Number of classes the object detector can identify
-        self.NUM_CLASSES = 12
+        self.NUM_CLASSES = 11
 
         # Load the label map.
         # Label maps map indices to category names, so that when our convolution
@@ -47,7 +44,7 @@ class MultiClassObj:
         self.category_index = label_map_util.create_category_index(self.categories)
         self.class_names_mapping = {
             1: "Aeroplane", 2: "auto", 3: "boat", 4: "bike", 5: "bus", 6: "bicycle", 7: "Car", 8: "ship", 9: "Train",
-            10: "scooty", 11: "Truck", 12: "Aeroplalne"
+            10: "scooty", 11: "Truck"
         }
         self.detection_graph = tf.Graph()
         with self.detection_graph.as_default():

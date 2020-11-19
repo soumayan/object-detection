@@ -42,7 +42,4 @@ item {
    id: 11
    name: 'Truck'
 }
-item {
-   id: 12
-   name: 'Aeroplalne'
-}
+
